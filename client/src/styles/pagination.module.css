@@ -1,0 +1,63 @@
+.principal {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.button {
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  background: transparent;
+  color: rgb(181, 181, 181);
+  border: none;
+}
+
+.active {
+  font-weight: 600;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+
+  background: transparent;
+  border: none;
+}
+
+.hover {
+  font-weight: 600;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  transition-duration: 300ms;
+
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+
+  background: transparent;
+  border: none;
+}
+.rightArrow {
+  width: 15px;
+  height: 20px;
+  background-image: url("../assets/right-arrow.png");
+  background-size: 13px 13px;
+  background-position: 0px 3px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.leftArrow {
+  width: 15px;
+  height: 20px;
+  background-image: url("../assets/right-arrow.png");
+  background-size: 13px 13px;
+  background-position: 0px 3px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transform: scaleX(-1);
+}

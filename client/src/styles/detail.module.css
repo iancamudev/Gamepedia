@@ -1,0 +1,170 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100vw;
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  align-self: center;
+  height: auto;
+  margin: 20px 0px;
+
+  padding: 40px 60px 40px 60px;
+  border-radius: 30px;
+  background-color: rgb(37, 37, 37);
+}
+.img {
+  width: 400px;
+  height: fit-content;
+  border-radius: 30px;
+}
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+.specs h3 {
+  color: white;
+  text-align: start;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 35px;
+}
+.div .specs p {
+  color: rgb(142, 142, 142);
+  text-align: start;
+  padding-left: 30px;
+}
+.div .specs {
+  display: flex;
+  flex-direction: column;
+}
+.div p {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.div span {
+  color: rgb(142, 142, 142);
+  text-align: start;
+  margin-left: 30px;
+  padding-left: 35px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.rocket {
+  background-image: url("../assets/rocket.png");
+  background-size: 25px 25px;
+  background-position: 0px 200%;
+  background-repeat: no-repeat;
+}
+.platforms {
+  background-image: url("../assets/gamepad.png");
+  background-size: 25px 25px;
+  background-position: 0px;
+  background-repeat: no-repeat;
+}
+.list {
+  background-image: url("../assets/list.png");
+  background-size: 20px 20px;
+  background-position: 0px 65%;
+  background-repeat: no-repeat;
+}
+.back {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  transition-duration: 100ms;
+  position: relative;
+  left: -30px;
+  background-image: url("../assets/right-arrow.png");
+  background-size: 20px 20px;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+.back:hover {
+  background-color: rgba(170, 170, 170, 0.455);
+  transition-duration: 250ms;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .div {
+    width: 90vw;
+    background: none;
+    padding: 10px 10px 10px 10px;
+  }
+  .img {
+    width: 80vw;
+    align-self: center;
+  }
+  .contenedor {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .body {
+    height: fit-content;
+  }
+  .div .specs span {
+    color: rgb(142, 142, 142);
+    text-align: start;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .specs h3 {
+    color: white;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 10px;
+    font-size: 35px;
+    margin-top: 10px;
+  }
+  .div .specs {
+    display: flex;
+    flex-direction: column;
+  }
+  .rocket {
+    background-image: url("../assets/rocket.png");
+    background-size: 25px 25px;
+    background-position: 0px 200%;
+    background-repeat: no-repeat;
+  }
+  .platforms {
+    background-image: url("../assets/gamepad.png");
+    background-size: 25px 25px;
+    background-position: 0px;
+    background-repeat: no-repeat;
+  }
+  .list {
+    background-image: url("../assets/list.png");
+    background-size: 20px 20px;
+    background-position: 0px 65%;
+    background-repeat: no-repeat;
+  }
+  .back {
+    display: flex;
+    position: relative;
+    justify-self: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    left: 10px;
+  }
+
+  .description {
+    background-color: rgb(37, 37, 37);
+    padding: 10px 20px;
+    width: 80vw;
+    border-radius: 30px;
+  }
+}

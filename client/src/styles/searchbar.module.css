@@ -1,0 +1,48 @@
+.div {
+  padding: 5px 10px 5px 10px;
+  background: none;
+  border: solid white 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.div:focus {
+  background-color: rgb(29, 29, 29);
+}
+
+.input {
+  padding: 20px 10px 20px 40px;
+  border: none;
+  /* border: solid white 1px; */
+  border-radius: 20px;
+  height: 25px;
+  background-color: rgb(37, 37, 37);
+  background-image: url("../assets/search.png");
+  background-size: 15px 15px;
+  background-position: 15px 45%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.input:focus {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(59, 59, 65);
+}
+.span {
+  background: url("../assets/search.png") no-repeat 50% 50%;
+  background-size: 22px 22px;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+}
+.invisible {
+  display: none;
+}
+@media (max-width: 800px) {
+  .input {
+    font-size: 16px;
+  }
+}

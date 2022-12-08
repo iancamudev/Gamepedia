@@ -1,0 +1,133 @@
+.principal {
+  width: 225px;
+  height: fit-content;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  background-color: rgb(37, 37, 37);
+  padding: 20px 20px;
+  /* border: solid rgb(74, 74, 78) 2px; */
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.button {
+  color: white;
+  font-size: 14px;
+  list-style-type: none;
+  text-align: start;
+  margin-left: 15px;
+  width: fit-content;
+  background: none;
+  border: none;
+  transition-duration: 100ms;
+}
+.button:hover {
+  cursor: pointer;
+  font-weight: 600;
+  transition-duration: 200ms;
+}
+.button:focus {
+  cursor: pointer;
+  font-weight: 600;
+  padding-left: 5px;
+  border-left: solid white 2px;
+}
+.p {
+  color: white;
+  font-weight: 600;
+  text-align: start;
+  width: fit-content;
+}
+
+.buttonReset {
+  border: solid white 1px;
+  border-radius: 4px;
+  padding: 0 5px 1px 5px;
+  font-weight: 400;
+  color: white;
+  font-weight: 400;
+  text-align: start;
+  margin-top: 10px;
+  padding: 2px 12px 5px 12px;
+  width: fit-content;
+  transition-duration: 100ms;
+}
+.buttonReset:hover {
+  border: solid white 1px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(18, 18, 18);
+  background-color: white;
+  border: solid rgb(18, 18, 18) 1px;
+  transition-duration: 200ms;
+}
+.actualFilters {
+  width: 100%;
+  height: fit-content;
+  background-color: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 3px 8px 3px;
+  min-height: 48px;
+}
+.option {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 3px 10px 3px 10px;
+  align-items: center;
+  margin: 2px 2px 2px 2px;
+  font-size: 14px;
+  transition-duration: 100ms;
+}
+.option:hover {
+  cursor: pointer;
+  transition-duration: 200ms;
+  outline: 3px solid white;
+  background-color: rgb(175, 175, 175);
+}
+@media (max-width: 800px) {
+  .principal {
+    width: 80vw;
+    margin: 0;
+    padding-top: 0;
+    margin-top: 10px;
+    transition-duration: 200ms;
+  }
+
+  .div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .actualFilters {
+    height: 46px;
+    margin-bottom: 5px;
+  }
+  .p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .buttonReset {
+    margin-top: 20px;
+  }
+  .button {
+    margin-top: 6px;
+    font-size: 16px;
+  }
+}

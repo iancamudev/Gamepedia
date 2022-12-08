@@ -1,0 +1,75 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/632051.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-start;
+  align-items: center;
+}
+.div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-around;
+  height: fit-content;
+  text-align: left;
+  height: 100vh;
+
+  backdrop-filter: blur(8px);
+}
+.h1 {
+  color: white;
+  font-size: 40px;
+}
+.p {
+  color: white;
+  margin-top: 20px;
+}
+.button {
+  margin-top: 20px;
+  background-color: white;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition-duration: 100ms;
+}
+.button:hover {
+  border: 2px solid white;
+  background: none;
+  color: white;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+.p2 {
+  color: rgb(170, 170, 170);
+  margin-top: 20px;
+}
+.img {
+  width: 150px;
+  height: 150px;
+  background: url("../assets/giphy.gif") 0 10px;
+  background-size: contain;
+  border-radius: 50%;
+}
+.div2 {
+  width: 40vw;
+}
+
+@media (max-width: 800px) {
+  .div {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .img {
+    margin-top: 5vh;
+  }
+  .div2 {
+    width: 80vw;
+    margin-top: 5vh;
+  }
+}
