@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BACKEND_HOST = "https://gampedia-back-production.up.railway.app";
+const BACKEND_HOST = process.env.REACT_APP_BACKEND;
 
 //Los types:
 export const GET_ALL_VIDEOGAMES = "GET_ALL_VIDEOGAMES";
